@@ -1,6 +1,5 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-from flask_ngrok import run_with_ngrok
 import pickle
 
 
@@ -42,5 +41,5 @@ def predict():
 
     return render_template('index2.html', prediction_text='Predicted Air Quality Index : {}'.format(prediction))
 
-
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
