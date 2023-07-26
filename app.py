@@ -1,5 +1,8 @@
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template,send_from_directory
+from flask_socketio import SocketIO
+from flask_cors import CORS
+import webbrowser, threading, os, random
 import pickle
 
 
