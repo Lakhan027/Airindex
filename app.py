@@ -42,4 +42,4 @@ def predict():
     return render_template('index2.html', prediction_text='Predicted Air Quality Index : {}'.format(prediction))
 
 if __name__ == "__main__":
-    socketio.run(app)
+    socketio.run(app, debug=True)
